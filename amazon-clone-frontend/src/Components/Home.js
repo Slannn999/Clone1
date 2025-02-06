@@ -2,7 +2,6 @@ import axios from "../axios";
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Card from "./Card";
-import { useStateValue } from "../StateProvider";
 import Navbar from "./Navbar";
 
 function Home() {

@@ -30,7 +30,6 @@ function Address() {
       },
     });
 
-    navigate("/payment");
   };
 
   return (

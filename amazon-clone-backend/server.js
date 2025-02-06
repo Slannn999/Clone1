@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
 const bcrypt = require("bcryptjs");
+require("dotenv").config();
 
 const Products = require("./Products");
 const Users = require("./Users");
@@ -19,9 +20,9 @@ app.use(cors({
 
 // connection url
 
-const connection_url = "mongodb+srv://gauresh019:gauresh@cluster0.jq2n6.mongodb.net/Cluster0?retryWrites=true&w=majority";
+const connection_url = process.env.MONGO_URL;
 
-
+//connection to mongodb
 mongoose.connect(connection_url, {
   useNewUrlParser: true,
   useUnifiedTopology: true,

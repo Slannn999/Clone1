@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import styled from "styled-components";
 import Address from "./Components/Address";
@@ -9,14 +8,10 @@ import Login from "./Components/Login";
 
 import SignUp from "./Components/SignUp";
 
-import { Elements } from "@stripe/react-stripe-js";
-import { loadStripe } from "@stripe/stripe-js";
 import AddProduct from "./Components/AddProduct";
 
 
-const promise = loadStripe(
-  "pk_test_51KUDBXSE1AGsrDtwyXK8vcHYNkEOofJAP1vV1fRlpZNo93g4o80dZe4IvhAkBXo2ytDciCqqpynwQUXv7plCjezF00G9zyj4sc"
-);
+
 
 function App() {
   return (
